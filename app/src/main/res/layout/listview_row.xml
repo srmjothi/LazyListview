@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_bg_thin"
+    android:paddingTop="0dip"
+    android:layout_gravity="top">
+        <TableRow >
+
+            <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dip" android:layout_gravity="top"
+                      >
+                      <TableRow>
+                         <TextView
+                              android:id="@+id/text"
+                              android:layout_height="30dp"
+                              android:layout_width="250dp"
+                              android:textSize="14sp"
+                              android:layout_marginLeft="10dip"
+                              android:layout_marginTop="2dip"
+                              android:textColor="#087cbb"
+                              android:layout_span="1"
+                              />
+                        </TableRow>
+                        <TableRow>
+                           <TextView
+                              android:text=""
+                              android:id="@+id/text1"
+                              android:layout_height="wrap_content"
+                              android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_gravity="center_vertical"
+                              android:textSize="11sp"
+                              android:padding="3dp"
+                              android:textColor="#030000"
+                              tools:text="description"
+                            />
+                        </TableRow>
+                      </TableLayout>
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image"
+                    android:src="@drawable/stub"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+</TableLayout>
